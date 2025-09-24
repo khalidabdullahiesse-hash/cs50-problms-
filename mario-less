@@ -1,0 +1,40 @@
+// step 0
+#include <stdio.h>
+#include <cs50.h>
+
+int main(void)
+{
+
+    // step 0
+    int hight =0;
+    int hash;
+    int space;
+
+  // step 1
+
+ do
+ {
+   hight=get_int("hight: ");
+   space=hight-1;
+   hash=hight;
+ }
+
+ while(hight <= 0 || hight > 8);
+
+//printf("%i", hight);
+for(int u = 0; u < hight - 1; u++)
+{
+    for(int i=space; i>0; i--)
+    {
+        printf(" ");
+    }
+    for (int k = 0; k < u; k++)
+    {
+        printf("#");
+    }
+    space--;
+    printf("\n");
+}
+
+}
+
